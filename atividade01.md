@@ -115,20 +115,3 @@
 | 2015 | Windows 10 | Atualizações contínuas |
 | 2020 | macOS Big Sur | Nova identidade visual da Apple |
 | 2021 | Windows 11 | Versão mais recente da Microsoft |
-
----
-
-# 💡 Sugestão para o Miro
-
-Organize o mapa mental com o nó central **"💻 Sistemas Operacionais"**, criando um ramo para cada década:
-
-- 🟦 1950
-- 🟩 1960
-- 🟨 1970
-- 🟧 1980
-- 🟥 1990
-- 🟪 2000
-- 🟫 2010
-- ⬛ 2020
-
-Em cada ramo, adicione os sistemas operacionais correspondentes com seu **ano de lançamento** e uma breve descrição. Esse formato facilita a visualização da evolução histórica dos sistemas operacionais e atende ao requisito da atividade.
