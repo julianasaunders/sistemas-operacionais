@@ -115,7 +115,7 @@ timeline
     Etapa 8 : Instalação de Drivers : Carregamento no Modo Kernel
     Etapa 9 : Primeiro Boot Local : Gerenciador de Inicialização (Bootmgr)
     Etapa 10 : Sistema Pronto : Transição para Modo Usuário (OOBE)
-```mermaid
+
 Etapa	O que acontece?	Conceito envolvido	Por que é importante?
 1. Inicialização	POST do UEFI/BIOS e busca do dispositivo de boot.	Hardware e Firmware	Garante a integridade física inicial e localiza o código de boot.
 2. Inicialização do instalador	Carga do WinPE para a RAM e boot do Kernel NT temporário.	Kernel e Gerenciador de Memória	Cria um ambiente em execução sem depender de um SO pré-instalado no HD.
@@ -127,7 +127,7 @@ Etapa	O que acontece?	Conceito envolvido	Por que é importante?
 8. Instalação/configuração de drivers	Detecção fina de componentes e vinculação com drivers.	Modo Kernel e Drivers	Permite que o kernel explore a capacidade máxima do hardware instalado.
 9. Inicialização do sistema	Reinicialização e boot direto pelo disco local recém-configurado.	Kernel e Bootloader	Transfere a execução do pendrive para a instalação definitiva no SSD.
 10. Windows pronto	Abertura do ambiente de trabalho e inicialização da Shell gráfica.	Modo Usuário vs. Modo Kernel	Isola o usuário comum do núcleo do SO, garantindo estabilidade e segurança.
-```
+
 🧩 Desafio Final
 1. Se não existisse um Sistema Operacional, o que precisaria ser feito manualmente?
 Sem o Sistema Operacional, a abstração do hardware deixaria de existir. O usuário ou desenvolvedor do aplicativo precisaria:
