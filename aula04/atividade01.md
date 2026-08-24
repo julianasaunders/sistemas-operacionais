@@ -1,4 +1,3 @@
-Markdown
 # 🖥️ Relatório Técnico: Formatação e Instalação do Windows 
 **Disciplina:** Estrutura e Arquitetura de Sistemas Operacionais  
 **Professor:** Prof. Me. Deivison S. Takatu  
