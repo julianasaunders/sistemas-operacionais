@@ -2,10 +2,12 @@
 🛠️ Descrição Geral do Processo de Instalação
 O processo de instalação do Windows transforma um conjunto de hardware inerte em um ambiente operacional funcional. O fluxo se divide em três fases principais:
 
+```mermaid
 graph TD
     A[Fase 1: Pré-Instalação / Boot] -->|Carrega ambiente temporário| B[Fase 2: Instalação / WinPE]
     B -->|Aplica imagem e grava bootloader| C[Fase 3: Pós-Instalação / OOBE & Drivers]
     C -->|Sistema pronto| D[Ambiente de Usuário Final]
+```
     
 Pré-Instalação (Boot & Firmware): O firmware da placa-mãe (UEFI/BIOS) realiza o teste de hardware (POST) e localiza o gerenciador de boot no pendrive inicializável.
 
@@ -28,10 +30,11 @@ Subsistema de E/S (Entrada/Saída): Intermedia a leitura de dados na interface U
 2. 🛡️ Kernel: O Núcleo do Sistema
 O Kernel NT é o coração do Windows. Ele passa a atuar logo após o bootloader carregar seus módulos essenciais na RAM.
 
+```mermaid
 flowchart LR
     Software[Aplicações / WinPE Setup] <-->|System Calls| Kernel[Kernel Windows NT]
     Kernel <-->|Drivers| Hardware[CPU / RAM / SSD / USB]
-    
+ ```   
 Atuação: Controla diretamente a CPU, gerencia as interrupções de hardware e aloca endereços de memória física.
 
 Controle na Instalação: O kernel impede que múltiplos processos tentem gravar no mesmo setor de disco simultaneamente e gerencia as taxas de transferência de dados do pendrive para a memória e da memória para o SSD.
@@ -58,13 +61,13 @@ Gerenciamento de Memória: Garantia de que as rotinas de descompressão do arqui
 
 5. 🧩 Programa × Processo × Thread
 Para exemplificar, consideremos a etapa de Cópia e Extração de Arquivos:
-
+```mermaid
 graph TD
     A[PROGRAMA: setup.exe no disco] -->|Carregado na RAM| B[PROCESSO: setup.exe em execução]
     B --> C[Thread 1: Interface Gráfica / Barra de Progresso]
     B --> D[Thread 2: Leitura do USB e Descompressão do WIM]
     B --> E[Thread 3: Escrita dos Dados no SSD]
-    
+```
 Programa: O arquivo estático setup.exe armazenado no pendrive (código passivo no disco).
 
 Processo: A instância em execução do setup.exe na RAM, possuindo um PID (Process ID), tabela de arquivos abertos e espaço de endereçamento.
@@ -86,14 +89,14 @@ Durante a instalação, o instalador cria partições obrigatórias (como a part
 
 7. 🔌 Entrada/Saída e Drivers de Dispositivos
 O Windows interage com o hardware por meio do Subsistema de E/S e de Drivers (módulos de software que traduzem comandos genéricos do SO em instruções específicas de uma peça de hardware).
-
+```mermaid
 flowchart TD
     User[Clique de confirmação no Mouse] --> Controller[Controladora USB]
     Controller --> Interrupt[Interrupção de Hardware - IRQ]
     Interrupt --> Driver[Driver de Mouse USB]
     Driver --> Kernel[Gerenciador de E/S do Kernel]
     Kernel --> Setup[Processo setup.exe]
-    
+```
 Na Instalação: O Windows utiliza drivers genéricos integrados à imagem do WinPE para garantir que dispositivos básicos (teclado, mouse, monitor VESA e SSDs padrão) funcionem imediatamente.
 
 Após a Instalação: O Windows Update baixa drivers específicos (ex: Nvidia, Realtek, Intel) para desbloquear todo o desempenho do hardware (resolução nativa, áudio avançado, redes de alta velocidade).
@@ -112,7 +115,7 @@ timeline
     Etapa 8 : Instalação de Drivers : Carregamento no Modo Kernel
     Etapa 9 : Primeiro Boot Local : Gerenciador de Inicialização (Bootmgr)
     Etapa 10 : Sistema Pronto : Transição para Modo Usuário (OOBE)
-    
+```mermaid
 Etapa	O que acontece?	Conceito envolvido	Por que é importante?
 1. Inicialização	POST do UEFI/BIOS e busca do dispositivo de boot.	Hardware e Firmware	Garante a integridade física inicial e localiza o código de boot.
 2. Inicialização do instalador	Carga do WinPE para a RAM e boot do Kernel NT temporário.	Kernel e Gerenciador de Memória	Cria um ambiente em execução sem depender de um SO pré-instalado no HD.
@@ -124,7 +127,7 @@ Etapa	O que acontece?	Conceito envolvido	Por que é importante?
 8. Instalação/configuração de drivers	Detecção fina de componentes e vinculação com drivers.	Modo Kernel e Drivers	Permite que o kernel explore a capacidade máxima do hardware instalado.
 9. Inicialização do sistema	Reinicialização e boot direto pelo disco local recém-configurado.	Kernel e Bootloader	Transfere a execução do pendrive para a instalação definitiva no SSD.
 10. Windows pronto	Abertura do ambiente de trabalho e inicialização da Shell gráfica.	Modo Usuário vs. Modo Kernel	Isola o usuário comum do núcleo do SO, garantindo estabilidade e segurança.
-    
+```
 🧩 Desafio Final
 1. Se não existisse um Sistema Operacional, o que precisaria ser feito manualmente?
 Sem o Sistema Operacional, a abstração do hardware deixaria de existir. O usuário ou desenvolvedor do aplicativo precisaria:
