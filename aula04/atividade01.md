@@ -16,12 +16,12 @@ Este documento descreve o ciclo de vida completo da instalação do Windows em u
 ## 🛠️ 1. O Processo de Formatação e Instalação (Visão Geral)
 
 O processo de instalação do Windows transforma um conjunto de hardware inerte em um ambiente computacional funcional. Ele ocorre em quatro fases principais:
-
+```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │  1. Pre-boot    │ ──> │ 2. Ambiente PE  │ ──> │ 3. Instalação   │ ──> │ 4. Configuração │
 │ (UEFI/BIOS/RAM) │     │  (Windows PE)   │     │ (Disco/Kernel)  │     │  (OOBE / Users) │
 └─────────────────┘     └─────────────────┘     └─────────────────┘     └─────────────────┘
-
+```
 
 1. **Pré-inicialização (Bootloader):** A firmware do computador (UEFI/BIOS) inicializa os testes POST e carrega o gerenciador de boot da mídia de instalação (pendrive bootável).
 2. **Execução do Ambiente Temporário (Windows PE):** O assistente de instalação carrega uma versão mínima do Windows totalmente na memória RAM.
@@ -54,7 +54,7 @@ O **Kernel** do Windows (`ntoskrnl.exe`) entra em ação no momento em que a ima
 ### 🔒 2.3. Modos de Execução (Kernel Mode vs. User Mode)
 
 A arquitetura do processador (x86/x64) define anéis de proteção (*Protection Rings*). O Windows utiliza dois modos principais:
-
+```
 +-------------------------------------------------------------+
 |                  Modo Usuário (Ring 3)                      |
 |   Instalador (setup.exe), Interface Gráfica, Utilitários    |
@@ -67,7 +67,7 @@ System Call (NTDLL.DLL)
 |                  Modo Kernel (Ring 0)                       |
 |   Kernel (ntoskrnl.exe), HAL, Drivers de Disco/USB/NTFS     |
 +-------------------------------------------------------------+
-
+```
 
 * **Modo Kernel (Ring 0):** Acesso **total e irrestrito** ao hardware e instruções do processador. O Kernel e os drivers de baixo nível rodam aqui.
 * **Modo Usuário (Ring 3):** Acesso **restrito e protegido**. A interface do instalador (`setup.exe`) executa neste modo.
@@ -96,7 +96,7 @@ Para entender a diferença estrutural, analisaremos o utilitário de instalaçã
 * **Thread (Fluxo de Execução):** Dentro do processo do instalador, existem múltiplos fluxos de execução concorrentes:
   * **Thread 1 (UI):** Mantém a interface gráfica responsiva, atualizando a barra de progresso e respondendo a cliques de mouse.
   * **Thread 2 (I/O & Uncompress):** Lê os pacotes da imagem `install.wim`, os descompacta e escreve no SSD.
-
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ Processo: setup.exe (PID: 1024)                             │
 │ ┌──────────────────────┐  ┌───────────────────────────────┐ │
@@ -104,7 +104,7 @@ Para entender a diferença estrutural, analisaremos o utilitário de instalaçã
 │ │ (Responde a cliques) │  │ (Escreve arquivos no SSD)     │ │
 │ └──────────────────────┘  └───────────────────────────────┘ │
 └─────────────────────────────────────────────────────────────┘
-
+```
 
 > **Por que usar múltiplas threads?**  
 > Se a instalação usasse apenas uma thread, a interface congelaria completamente enquanto o sistema estivesse descompactando um arquivo pesado de 4 GB no disco. As threads permitem **paralelismo e responsividade**.
