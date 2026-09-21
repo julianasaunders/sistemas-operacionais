@@ -6,6 +6,22 @@ Este manual resume o fluxo essencial para baixar repositórios remotos para a su
 
 ## ⚙️ 1. Configuração Inicial do Git (Apenas na 1ª vez)
 
+Para abrir o terminal e executar os comandos do Git, os atalhos variam consoante esteja a utilizar o editor de código ou o próprio sistema operativo:
+
+* **No Visual Studio Code (VS Code):**
+  * Pressione **`Ctrl + '`** (tecla Control juntamente com a tecla da apóstrofe/aspas simples, que costuma estar ao lado do número 1 ou perto do Enter).
+  * Em teclados com layout ABNT/PT, a combinação alternativa mais comum é **`Ctrl + J`** (que abre o painel inferior onde se encontra o separador *Terminal*).
+
+* **No Windows (fora do VS Code):**
+  * Pressione **`Win + R`**, digite `cmd` (ou `powershell`) e pressione **Enter**.
+  * Se tiver o **Git Bash** instalado, pode simplesmente clicar com o botão direito do rato num espaço vazio da pasta onde quer clonar o projeto e selecionar **"Open Git Bash here"** ou **"Abrir no Terminal"**.
+
+* **No Linux:**
+  * Pressione **`Ctrl + Alt + T`**.
+
+* **No macOS:**
+  * Pressione **`Command (⌘) + Barra de Espaço`**, digite `Terminal` e pressione **Enter**.
+
 Antes de começar, identifique-se para que o Git registre a autoria dos seus commits:
 
 ```bash
