@@ -1,6 +1,6 @@
 # 💻 Sistemas Operacionais
 
-Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**, no terceiro ciclo de **Análise e Desenvolvimento de Sistemas**. Os materiais estão organizados por aula e acompanham temas que vão da história da computação à virtualização, à computação em nuvem e ao deploy de aplicações.
+Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**, no terceiro ciclo de **Análise e Desenvolvimento de Sistemas**. Os materiais estão organizados por aula e acompanham temas que vão da história da computação ao gerenciamento de memória, à virtualização, à computação em nuvem e ao deploy de aplicações.
 
 ## 📚 Conteúdo das aulas
 
@@ -11,7 +11,8 @@ Este repositório reúne anotações, atividades e projetos desenvolvidos durant
 | **03** | Tipos de sistemas operacionais e controle de versão com Git | [Resumo e manual de clone](Aula%2003%20%E2%80%94%20Tipos%20de%20Sistemas%20Operacionais%20e%20Git/README.md) |
 | **04** | Arquitetura do sistema operacional, kernel e instalação do Windows | [Resumos e atividades](Aula%2004%20%E2%80%94%20Estrutura%20do%20Sistema%20Operacional%20e%20Instala%C3%A7%C3%A3o%20do%20Windows/README.md) |
 | **05** | Virtualização, Oracle VirtualBox e distribuições Linux | [Manual e comparação](Aula%2005%20%E2%80%94%20Virtualiza%C3%A7%C3%A3o%20e%20Distribui%C3%A7%C3%B5es%20Linux/README.md) |
-| **06** | Computação em nuvem, containers e deploy no Render | [Resumo e manual](Aula%2006%20%E2%80%94%20Computa%C3%A7%C3%A3o%20em%20Nuvem,%20Containers%20e%20Deploy/README.md) |
+| **06** | Gerenciamento de memória: hierarquia, alocação, fragmentação, paginação e memória virtual | [Resumo e projeto Monitor de SO](Aula%2006%20%E2%80%94%20Gerenciamento%20de%20Mem%C3%B3ria%20em%20Sistemas%20Operacionais/README.md) |
+| **07** | Computação em nuvem, containers e deploy no Render | [Resumo e manual](Aula%2007%20%E2%80%94%20Computa%C3%A7%C3%A3o%20em%20Nuvem,%20Containers%20e%20Deploy/README.md) |
 
 ## 🎓 Sobre a disciplina
 

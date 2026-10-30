@@ -1,6 +1,6 @@
-# ☁️ Aula 06 — Computação em Nuvem, Containers e Deploy
+# ☁️ Aula 07 — Computação em Nuvem, Containers e Deploy
 
-A última aula conecta os conceitos de sistemas operacionais à **computação em nuvem**: modelos de serviço, alta disponibilidade, containers e a publicação de uma API desenvolvida em **Node.js e Express**.
+Esta aula conecta os conceitos de sistemas operacionais à **computação em nuvem**: modelos de serviço, alta disponibilidade, containers e a publicação de uma API desenvolvida em **Node.js e Express**.
 
 > **Disciplina:** Sistemas Operacionais  
 > **Tema:** Nuvem, virtualização, containers e deploy de aplicações
@@ -112,13 +112,15 @@ flowchart LR
 
 No ambiente local, o processo roda sob o sistema operacional do próprio usuário; no Render, o mesmo código executa em um ambiente Linux gerenciado, com chamadas de sistema mediadas pelo kernel do servidor.
 
+> 💻 A aplicação usada como base é o **[Monitor de Sistemas Operacionais](https://github.com/julianasaunders/SO)**, desenvolvido na Aula 06 para ler memória, CPU e uptime do servidor pelo módulo `os` do Node.js.
+
 ---
 
 ## 📂 Materiais disponíveis
 
 | Arquivo | O que apresenta |
 |---|---|
-| [📝 resumoAula06.md](resumoAula06.md) | Fundamentos da nuvem, alta disponibilidade, IaaS/PaaS/SaaS, provedores, containers e referências. |
+| [📝 resumoAula07.md](resumoAula07.md) | Fundamentos da nuvem, alta disponibilidade, IaaS/PaaS/SaaS, provedores, containers e referências. |
 | [🚀 manual.md](manual.md) | Manual completo da API REST com Express até o deploy no Render, com comparação local × nuvem. |
 
 ---
@@ -138,4 +140,4 @@ Criar uma API REST com **Express**, executá-la localmente, publicar o projeto n
 
 ---
 
-[← Aula 05](../Aula%2005%20%E2%80%94%20Virtualiza%C3%A7%C3%A3o%20e%20Distribui%C3%A7%C3%B5es%20Linux/README.md) · [📚 Índice da disciplina](../README.md)
+[← Aula 06](../Aula%2006%20%E2%80%94%20Gerenciamento%20de%20Mem%C3%B3ria%20em%20Sistemas%20Operacionais/README.md) · [📚 Índice da disciplina](../README.md)
