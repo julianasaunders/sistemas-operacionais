@@ -1,4 +1,4 @@
-# 📚 Apresentação da Disciplina e Introdução aos Sistemas Operacionais
+# 🕰️ Aula 01 — Apresentação da Disciplina e Introdução aos Sistemas Operacionais
 
 > **Disciplina:** Sistemas Operacionais  
 > **Tema:** Apresentação da Disciplina e Introdução aos Sistemas Operacionais
