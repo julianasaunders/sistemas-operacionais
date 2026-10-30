@@ -285,5 +285,3 @@ Segundo o professor, manter um portfólio permite:
 # ✅ Conclusão
 
 Esta aula teve como objetivo apresentar a disciplina e introduzir os principais conceitos de Sistemas Operacionais. Foram apresentados o funcionamento geral do SO, a importância do Kernel, o gerenciamento de processos, memória, dispositivos e arquivos, além dos critérios de avaliação e das atividades que serão desenvolvidas durante o semestre.
-
-> 💡 **Dica:** Este resumo já está formatado para ser utilizado diretamente no `README.md` do repositório da disciplina no GitHub.
