@@ -14,6 +14,12 @@ Este repositório reúne anotações, atividades e projetos desenvolvidos durant
 | **06** | Gerenciamento de memória: hierarquia, alocação, fragmentação, paginação e memória virtual | [Resumo e projeto Monitor de SO](Aula%2006%20%E2%80%94%20Gerenciamento%20de%20Mem%C3%B3ria%20em%20Sistemas%20Operacionais/README.md) |
 | **07** | Computação em nuvem, containers e deploy no Render | [Resumo e manual](Aula%2007%20%E2%80%94%20Computa%C3%A7%C3%A3o%20em%20Nuvem,%20Containers%20e%20Deploy/README.md) |
 
+## 📂 Materiais de apoio
+
+| Pasta | Conteúdo |
+|---|---|
+| [📚 Referências](Refer%C3%AAncias/README.md) | Livros e fontes de consulta, incluindo o PDF de *Sistemas Operacionais Modernos* (Tanenbaum). |
+
 ## 🎓 Sobre a disciplina
 
 **Professor:** Me. Deivison S. Takatu  
@@ -21,7 +27,7 @@ Este repositório reúne anotações, atividades e projetos desenvolvidos durant
 
 ### 📖 Referências registradas nos materiais
 
-- TANENBAUM, A. S.; BOS, H. *Sistemas Operacionais Modernos*. 4. ed. Pearson, 2016.
+- TANENBAUM, A. S.; BOS, H. *Sistemas Operacionais Modernos*. 4. ed. Pearson, 2016. — [PDF no repositório](Refer%C3%AAncias/Sistemas%20Operacionais%20Modernos.pdf)
 - SILBERSCHATZ, A.; GALVIN, P. B.; GAGNE, G. *Fundamentos de Sistemas Operacionais*. 9. ed. LTC, 2015.
 - STALLINGS, W. *Sistemas Operacionais: Conceitos e Projetos*. 8. ed. Pearson, 2015.
 - DENARDIN, G. W.; BARRIQUELLO, C. H. *Sistemas Operacionais de Tempo Real e sua Aplicação em Sistemas Embarcados*. UFRGS, 2014.
