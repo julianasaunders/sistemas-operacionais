@@ -2,6 +2,11 @@
 
 Este repositório reúne anotações, atividades e projetos desenvolvidos durante os estudos de **Sistemas Operacionais**, no terceiro ciclo de **Análise e Desenvolvimento de Sistemas**. Os materiais estão organizados por aula e acompanham temas que vão da história da computação ao gerenciamento de memória, à virtualização, à computação em nuvem e ao deploy de aplicações.
 
+## 🎓 Sobre a disciplina
+
+**Professor:** Me. Deivison S. Takatu  
+**Instituição:** Fatec - Faculdade de Tecnologia
+
 ## 📚 Conteúdo das aulas
 
 | Aula | Assunto | Material |
@@ -19,11 +24,6 @@ Este repositório reúne anotações, atividades e projetos desenvolvidos durant
 | Pasta | Conteúdo |
 |---|---|
 | [📚 Referências](Refer%C3%AAncias/README.md) | Livros e fontes de consulta, incluindo o PDF de *Sistemas Operacionais Modernos* (Tanenbaum). |
-
-## 🎓 Sobre a disciplina
-
-**Professor:** Me. Deivison S. Takatu  
-**Instituição:** Fatec - Faculdade de Tecnologia
 
 ### 📖 Referências registradas nos materiais
 
