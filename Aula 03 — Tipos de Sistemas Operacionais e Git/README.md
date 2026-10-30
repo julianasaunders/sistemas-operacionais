@@ -137,4 +137,4 @@ flowchart LR
 
 ---
 
-[← Aula 02](../Aula-2/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 04 →](../Aula-4/README.md)
+[← Aula 02](../Aula%2002%20%E2%80%94%20Evolu%C3%A7%C3%A3o%20dos%20Sistemas%20Operacionais/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 04 →](../Aula%2004%20%E2%80%94%20Estrutura%20do%20Sistema%20Operacional%20e%20Instala%C3%A7%C3%A3o%20do%20Windows/README.md)

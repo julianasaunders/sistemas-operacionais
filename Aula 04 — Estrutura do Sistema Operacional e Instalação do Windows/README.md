@@ -160,4 +160,4 @@ Compara cinco sistemas com suas bases e o foco de aplicação:
 
 ---
 
-[← Aula 03](../Aula-3/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 05 →](../Aula-5/README.md)
+[← Aula 03](../Aula%2003%20%E2%80%94%20Tipos%20de%20Sistemas%20Operacionais%20e%20Git/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 05 →](../Aula%2005%20%E2%80%94%20Virtualiza%C3%A7%C3%A3o%20e%20Distribui%C3%A7%C3%B5es%20Linux/README.md)

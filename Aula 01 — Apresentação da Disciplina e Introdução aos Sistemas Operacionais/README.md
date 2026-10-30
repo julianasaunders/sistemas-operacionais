@@ -297,6 +297,6 @@ Esta aula teve como objetivo apresentar a disciplina e introduzir os principais 
 
 ---
 
-📚 [Índice da disciplina](../README.md) · [Próxima aula →](../Aula-2/README.md)
+📚 [Índice da disciplina](../README.md) · [Próxima aula →](../Aula%2002%20%E2%80%94%20Evolu%C3%A7%C3%A3o%20dos%20Sistemas%20Operacionais/README.md)
 
 **Professor:** Me. Deivison S. Takatu · [Contato institucional](mailto:deivison.takatu@fatec.sp.gov.br)

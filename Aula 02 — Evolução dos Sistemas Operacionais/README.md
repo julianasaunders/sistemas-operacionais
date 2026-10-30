@@ -110,4 +110,4 @@ O resumo registra duas entregas: um documento Markdown detalhado sobre a evoluç
 
 ---
 
-[← Aula 01](../Aula-1/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 03 →](../Aula-3/README.md)
+[← Aula 01](../Aula%2001%20%E2%80%94%20Apresenta%C3%A7%C3%A3o%20da%20Disciplina%20e%20Introdu%C3%A7%C3%A3o%20aos%20Sistemas%20Operacionais/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 03 →](../Aula%2003%20%E2%80%94%20Tipos%20de%20Sistemas%20Operacionais%20e%20Git/README.md)

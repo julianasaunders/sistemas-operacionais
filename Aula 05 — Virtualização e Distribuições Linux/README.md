@@ -127,4 +127,4 @@ Instalar o Oracle VirtualBox e criar uma máquina virtual com uma distribuição
 
 ---
 
-[← Aula 04](../Aula-4/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 06 →](../Aula-6/README.md)
+[← Aula 04](../Aula%2004%20%E2%80%94%20Estrutura%20do%20Sistema%20Operacional%20e%20Instala%C3%A7%C3%A3o%20do%20Windows/README.md) · [📚 Índice da disciplina](../README.md) · [Aula 06 →](../Aula%2006%20%E2%80%94%20Computa%C3%A7%C3%A3o%20em%20Nuvem,%20Containers%20e%20Deploy/README.md)
